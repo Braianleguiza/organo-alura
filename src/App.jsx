@@ -1,10 +1,10 @@
-/* eslint-disable no-debugger */
 /* eslint-disable react/jsx-key */
 import { useState } from "react";
 import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
 import Categoria from "./components/Categoria";
 import Rodape from "./components/Rodape";
+import filmesInicial from "./storages/store";
 
 function App() {
     const categorias = [
@@ -45,10 +45,9 @@ function App() {
         },
     ];
 
-    const [filmes, setFilmes] = useState([]);
+    const [filmes, setFilmes] = useState(filmesInicial);
 
     const aoNovoFilmeAdicionado = (filme) => {
-        debugger;
         setFilmes([...filmes, filme]);
     };
 

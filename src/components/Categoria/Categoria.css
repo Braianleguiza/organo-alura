@@ -1,6 +1,7 @@
 .categoria {
     text-align: center;
     padding: 32px;
+    background-blend-mode: multiply;
 }
 .categoria h3 {
     font-size: 32px;

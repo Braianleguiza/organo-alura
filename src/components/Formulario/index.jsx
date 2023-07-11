@@ -10,6 +10,7 @@ const Formulario = (props) => {
     const [ano, setAno] = useState();
     const [categoria, setCategoria] = useState();
     const [imagem, setImagem] = useState();
+    const [descricao, setDescricao] = useState();
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
@@ -18,11 +19,13 @@ const Formulario = (props) => {
             ano: ano,
             imagem: imagem,
             categoria: categoria,
+            descricao: descricao,
         });
         setNome("");
         setAno("");
         setImagem("");
         setCategoria("");
+        setDescricao("");
     };
     return (
         <section className="formulario">
@@ -48,6 +51,13 @@ const Formulario = (props) => {
                     valor={imagem}
                     placeholder="Informe o endereço da imagem"
                     aoAlterado={(valor) => setImagem(valor)}
+                />
+                <CampoTexto
+                    obrigatorio
+                    label="Descricao"
+                    valor={descricao}
+                    placeholder="Informe a descricao do filme"
+                    aoAlterado={(valor) => setDescricao(valor)}
                 />
                 <ListaSuspensa
                     obrigatorio

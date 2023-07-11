@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./Filme.css";
 
-const Filme = ({ nome, categoria, imagem, fundo }) => {
+const Filme = ({ nome, categoria, imagem, fundo, descricao }) => {
     return (
         <div className="filme">
             <div className="cabecalho" style={{ backgroundColor: fundo }}>
@@ -10,6 +10,9 @@ const Filme = ({ nome, categoria, imagem, fundo }) => {
             <div className="rodape">
                 <h4>{nome}</h4>
                 <h5>{categoria}</h5>
+            </div>
+            <div>
+                <p>{descricao}</p>
             </div>
         </div>
     );

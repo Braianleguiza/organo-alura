@@ -10,7 +10,10 @@ const Categoria = (props) => {
     return props.filmes.length > 0 ? (
         <section
             className="categoria"
-            style={{ backgroundColor: props.corSecundaria }}
+            style={{
+                backgroundColor: props.corSecundaria,
+                backgroundImage: "url(/imagens/fundo.png)",
+            }}
         >
             <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
             <div className="filmes">
@@ -21,6 +24,7 @@ const Categoria = (props) => {
                         categoria={filme.categoria}
                         imagem={filme.imagem}
                         fundo={props.corPrimaria}
+                        descricao={filme.descricao}
                     />
                 ))}
             </div>
