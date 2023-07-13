@@ -1,13 +1,17 @@
 .categoria {
-    text-align: center;
     padding: 32px;
     background-blend-mode: multiply;
+    margin: 32px;
+    border-radius: 16px;
 }
 .categoria h3 {
     font-size: 32px;
-    border-bottom: 4px solid;
     display: inline-block;
+    border-bottom: 4px solid;
+    padding: 0 0 6px;
+    margin-left: 40vw;
 }
+
 .categoria .filmes {
     display: flex;
     justify-content: space-around;

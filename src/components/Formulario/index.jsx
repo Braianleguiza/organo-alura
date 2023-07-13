@@ -29,7 +29,7 @@ const Formulario = (props) => {
     };
     return (
         <section className="formulario">
-            <form onSubmit={aoSalvar}>
+            <form className="bg-neutral" onSubmit={aoSalvar}>
                 <h1>Prencha os dados do filme: </h1>
                 <CampoTexto
                     obrigatorio
@@ -66,7 +66,9 @@ const Formulario = (props) => {
                     valor={categoria}
                     aoAlterado={(valor) => setCategoria(valor)}
                 />
-                <Botao>Criar Card</Botao>
+                <div className="botao-container">
+                    <Botao>Criar Card</Botao>
+                </div>
             </form>
         </section>
     );

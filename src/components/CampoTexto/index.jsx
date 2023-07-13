@@ -10,6 +10,7 @@ const CampoTexto = (props) => {
         <div className="campo-texto">
             <label>{props.label}</label>
             <input
+                className="input input-bordered w-full max-w-xs"
                 value={props.valor}
                 onChange={aoDigitado}
                 required={props.obrigatorio}

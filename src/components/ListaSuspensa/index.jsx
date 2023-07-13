@@ -6,6 +6,7 @@ const ListaSuspensa = (props) => {
         <div className="lista-suspensa">
             <label htmlFor={props.label}>{props.label}</label>
             <select
+                className="select select-error w-full max-w-xs"
                 value={props.valor}
                 onChange={(evento) => props.aoAlterado(evento.target.value)}
                 required={props.obrigatorio}

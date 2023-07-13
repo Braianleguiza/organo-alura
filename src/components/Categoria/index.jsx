@@ -11,11 +11,16 @@ const Categoria = (props) => {
         <section
             className="categoria"
             style={{
-                backgroundColor: props.corSecundaria,
+                border: "4px solid" + props.corPrimaria + 80,
                 backgroundImage: "url(/imagens/fundo.png)",
             }}
         >
-            <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
+            <h3
+                className="text-5xl font-bold"
+                style={{ borderColor: props.corPrimaria + 80 }}
+            >
+                {props.nome}
+            </h3>
             <div className="filmes">
                 {props.filmes.map((filme) => (
                     <Filme

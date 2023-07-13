@@ -5,6 +5,7 @@ import Formulario from "./components/Formulario";
 import Categoria from "./components/Categoria";
 import Rodape from "./components/Rodape";
 import filmesInicial from "./storages/store";
+import "tailwindcss/tailwind.css";
 
 function App() {
     const categorias = [
