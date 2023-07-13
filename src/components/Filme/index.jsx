@@ -15,7 +15,7 @@ const Filme = ({ nome, categoria, imagem, fundo, descricao }) => {
             onMouseLeave={() => setHovered(false)}
             style={{
                 boxShadow: hovered
-                    ? `0 4px 8px ${fundo}20, 0 0px 16px ${fundo}`
+                    ? `0 2px 4px 8px ${fundo}20, 0 0px 16px 8px ${fundo}50`
                     : "none",
                 transition: "box-shadow 0.3s",
             }}

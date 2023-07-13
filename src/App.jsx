@@ -10,39 +10,52 @@ import "tailwindcss/tailwind.css";
 function App() {
     const categorias = [
         {
+            nome: "Animação",
+            corPrimaria: "#3FD1C9",
+            corSecundaria: "#FEEFDF",
+            icon: "/imagens/cartoon.svg",
+        },
+        {
             nome: "Aventura",
-            corPrimaria: "#57c278",
+            corPrimaria: "#3AB54A",
             corSecundaria: "#d9f7e9",
+            icon: "/imagens/aventura.svg",
         },
         {
             nome: "Comédia",
-            corPrimaria: "#82CFFA",
+            corPrimaria: "#F9D71C",
             corSecundaria: "#E8F8FF",
+            icon: "/imagens/comedy.svg",
         },
         {
             nome: "Drama",
-            corPrimaria: "#A6D157",
+            corPrimaria: "#E74C3C",
             corSecundaria: "#F0F8E2",
+            icon: "/imagens/drama.svg",
         },
         {
             nome: "Épico",
-            corPrimaria: "#E06B69",
+            corPrimaria: "#8C67AB",
             corSecundaria: "#FEE7E9",
+            icon: "/imagens/epic.svg",
         },
         {
             nome: "Ficção científica",
-            corPrimaria: "#DB6EBF",
+            corPrimaria: "#3498DB",
             corSecundaria: "#FAE9F6",
+            icon: "/imagens/fiction.svg",
         },
         {
             nome: "Romance",
-            corPrimaria: "#FFBB05",
+            corPrimaria: "#FF6EC7",
             corSecundaria: "#FFF5D9",
+            icon: "/imagens/romance.svg",
         },
         {
             nome: "Suspense",
-            corPrimaria: "#FF8A29",
+            corPrimaria: "#8B0000",
             corSecundaria: "#FEEFDF",
+            icon: "/imagens/suspense.svg",
         },
     ];
 
@@ -63,6 +76,7 @@ function App() {
                 <Categoria
                     key={categoria.nome}
                     nome={categoria.nome}
+                    icon={categoria.icon}
                     corPrimaria={categoria.corPrimaria}
                     corSecundaria={categoria.corSecundaria}
                     filmes={filmes.filter(

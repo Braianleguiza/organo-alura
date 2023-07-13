@@ -17,9 +17,17 @@ const Categoria = (props) => {
         >
             <h3
                 className="text-5xl font-bold"
-                style={{ borderColor: props.corPrimaria + 80 }}
+                style={{
+                    borderColor: props.corPrimaria + 80,
+                    display: "inline-flex",
+                }}
             >
-                {props.nome}
+                <img
+                    style={{ marginRight: "5px" }}
+                    src={props.icon}
+                    alt={props.nome}
+                />
+                <span>{props.nome}</span>
             </h3>
             <div className="filmes">
                 {props.filmes.map((filme) => (
