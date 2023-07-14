@@ -38,6 +38,7 @@ const Categoria = (props) => {
                         imagem={filme.imagem}
                         fundo={props.corPrimaria}
                         descricao={filme.descricao}
+                        ano={filme.ano}
                     />
                 ))}
             </div>

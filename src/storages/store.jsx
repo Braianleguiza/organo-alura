@@ -56,6 +56,30 @@ const filmesInicial = [
         categoria: "Drama",
     },
     {
+        nome: "Homens de Honra",
+        ano: 2000,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/2/2d/Men_of_Honor_P%C3%B4ster.jpg",
+        descricao:
+            "Homens de Honra é um filme norte-americano de 2000, dirigido por George Tillman Jr., com roteiro de Scott Marshall Smith. ",
+        categoria: "Drama",
+    },
+    {
+        nome: "Um Sonho de Liberdade",
+        ano: 1994,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/d/d2/The_Shawshank_Redemption_p%C3%B4ster.png",
+        descricao:
+            "Um Sonho de Liberdade é um filme norte-americano de drama lançado em 1994, escrito e dirigido por Frank Darabont baseado na novela Rita Hayworth and Shawshank Redemption, de Stephen King.",
+        categoria: "Drama",
+    },
+    {
+        nome: "À Espera de um Milagre",
+        ano: 1999,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/8/8f/%C3%80_Espera_de_um_Milagre.jpg",
+        descricao:
+            "À Espera de um Milagre é um filme norte-americano de 1999, dos gêneros drama, policial e fantasia, dirigido e roteirizado por Frank Darabont, com base no livro homônimo de Stephen King, lançado em 1996.",
+        categoria: "Drama",
+    },
+    {
         nome: "Clube da Luta",
         ano: 1999,
         imagem: "https://upload.wikimedia.org/wikipedia/pt/2/2b/FightClubPoster.jpg",
@@ -69,6 +93,38 @@ const filmesInicial = [
         imagem: "https://upload.wikimedia.org/wikipedia/pt/3/38/Lord_of_the_Rings_Fellowship_of_the_Ring.jpg",
         descricao:
             "O Senhor dos Anéis: A Sociedade do Anel é um épico de fantasia de 2001 dirigido por Peter Jackson.",
+        categoria: "Épico",
+    },
+    {
+        nome: "Troia",
+        ano: 2004,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/e/ec/Troia_poster.jpg",
+        descricao:
+            "Troia é um filme épico britano-malto-estadunidense de 2004, dirigido por Wolfgang Petersen, com roteiro de David Benioff baseado no poema épico Ilíada, de Homero, sobre a Guerra de Troia.",
+        categoria: "Épico",
+    },
+    {
+        nome: "King Kong",
+        ano: 2004,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/6/6a/Kingkong_bigfinal1.jpg",
+        descricao:
+            "King Kong é um filme estadunidense de 2005, dos gêneros épico, ação, aventura, e fantasia, co-escrito, produzido e dirigido por Peter Jackson, sendo um remake de King Kong, de 1933.",
+        categoria: "Épico",
+    },
+    {
+        nome: "Coração Valente",
+        ano: 1995,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/0/0e/Braveheart_poster.jpg",
+        descricao:
+            "Coração Valente é um filme norte-americano de 1995, estrelado e realizado por Mel Gibson.",
+        categoria: "Épico",
+    },
+    {
+        nome: "300",
+        ano: 2006,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/1/19/300_poster.jpg",
+        descricao:
+            "300 é um filme de fantasia e guerra norte-americano de 2006, co-escrito e dirigido por Zack Snyder. É baseado na série de quadrinhos homônima de Frank Miller e Lynn Varley, publicada pela Dark Horse Comics em 1998.",
         categoria: "Épico",
     },
     {
@@ -136,6 +192,22 @@ const filmesInicial = [
         categoria: "Aventura",
     },
     {
+        nome: "Piratas do Caribe: A Maldição do Pérola Negra",
+        ano: 2003,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/e/e6/Pirates_of_the_Caribbean_-_The_Curse_of_the_Black_Pearl.jpg",
+        descricao:
+            "Piratas do Caribe é um filme estadunidense de fantasia Swashbuckler de 2003 baseado no brinquedo Pirates of the Caribbean dos parques temáticos da Walt Disney Parks and Resorts.",
+        categoria: "Aventura",
+    },
+    {
+        nome: "Harry Potter e a Pedra Filosofal",
+        ano: 2001,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/1/1d/Harry_Potter_Pedra_Filosofal_2001.jpg",
+        descricao:
+            "Harry Potter é um filme britano-americano de 2001, dos gêneros aventura e fantasia, dirigido por Chris Columbus, com roteiro de Steven Kloves baseado no livro homônimo de J. K. Rowling.",
+        categoria: "Aventura",
+    },
+    {
         nome: "O Silêncio dos Inocentes",
         ano: 1991,
         imagem: "https://upload.wikimedia.org/wikipedia/pt/0/0a/Silence_of_the_lambs.png",
@@ -176,6 +248,22 @@ const filmesInicial = [
         categoria: "Comédia",
     },
     {
+        nome: "Esqueceram de Mim",
+        ano: 1990,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/8/8f/Esqueceram-de-mim.jpg",
+        descricao:
+            "Esqueceram de Mim é um filme de comédia de Natal estadunidense de 1990, escrito e produzido por John Hughes e dirigido por Chris Columbus. ",
+        categoria: "Comédia",
+    },
+    {
+        nome: "Todo Poderoso",
+        ano: 2003,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/6/60/BruceAlmighty_poster.jpg",
+        descricao:
+            "Todo Poderoso é um filme de comédia e fantasia estadunidense de 2003, dirigido por Tom Shadyac e escrito por Steve Koren, Mark O'Keefe e Steve Oedekerk.",
+        categoria: "Comédia",
+    },
+    {
         nome: "A Origem",
         ano: 2010,
         imagem: "https://upload.wikimedia.org/wikipedia/pt/8/84/AOrigemPoster.jpg",
@@ -184,12 +272,36 @@ const filmesInicial = [
         categoria: "Ficção científica",
     },
     {
-        nome: "Amnésia",
-        ano: 2000,
-        imagem: "https://upload.wikimedia.org/wikipedia/pt/c/cf/MementoCartaz.jpg",
+        nome: "WALL-E",
+        ano: 2008,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/3/30/WALL-E.jpg",
         descricao:
-            "Amnésia é um filme de suspense de 2000 dirigido por Christopher Nolan.",
-        categoria: "Suspense",
+            "WALL-E (estilizado como WALL·E) é um filme de animação americano de 2008 produzido pela Pixar Animation Studios e dirigido por Andrew Stanton.",
+        categoria: "Animação",
+    },
+    {
+        nome: "UP",
+        ano: 2009,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/a/a8/Up_p%C3%B4ster.jpg",
+        descricao:
+            "Up é um filme norte-americano do gênero animação sendo o 10º longa-metragem de animação produzida pelos estúdios Pixar lançada nos Estados Unidos em 29 de maio de 2009",
+        categoria: "Animação",
+    },
+    {
+        nome: "Bolt",
+        ano: 2008,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/5/5c/Bolt-filme.jpg",
+        descricao:
+            "Bolt é um filme de animação estadunidense de 2008, dos gêneros comédia e aventura, dirigido por Chris Williams e Byron Howard",
+        categoria: "Animação",
+    },
+    {
+        nome: "O Castelo Animado",
+        ano: 2004,
+        imagem: "https://upload.wikimedia.org/wikipedia/en/a/a0/Howls-moving-castleposter.jpg",
+        descricao:
+            "O Castelo Animado é um filme japonês de animação e fantasia lançado em 2004, vagamente baseado no romance Howl's Moving Castle (1986) da dramaturga britânica Diana Wynne Jones.",
+        categoria: "Animação",
     },
     {
         nome: "Brilho Eterno de uma Mente sem Lembranças",
@@ -197,6 +309,14 @@ const filmesInicial = [
         imagem: "https://upload.wikimedia.org/wikipedia/pt/a/af/Eternal_Sunshine_of_the_Spotless_Mind.jpg",
         descricao:
             "Brilho Eterno de uma Mente sem Lembranças é um filme de romance de 2004 dirigido por Michel Gondry.",
+        categoria: "Romance",
+    },
+    {
+        nome: "Encontro Marcado",
+        ano: 1998,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/f/f0/Meet_Joe_Black.jpg",
+        descricao:
+            "Encontro Marcado é um filme de fantasia romântico americano lançado em 1998, remake do filme Death Takes a Holiday, de 1934.",
         categoria: "Romance",
     },
     {
@@ -213,6 +333,22 @@ const filmesInicial = [
         imagem: "https://upload.wikimedia.org/wikipedia/pt/5/58/Donnie_Darko.jpg",
         descricao:
             "Donnie Darko é um filme de ficção científica de 2001 dirigido por Richard Kelly.",
+        categoria: "Ficção científica",
+    },
+    {
+        nome: "Logan",
+        ano: 2017,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/5/53/Logan_2017.jpg",
+        descricao:
+            "Logan é um filme canado-australiano-estadunidense de 2017, dos gêneros ação, drama e ficção científica, dirigido por James Mangold, com base no personagem da Marvel Comics, Wolverine.",
+        categoria: "Ficção científica",
+    },
+    {
+        nome: "Vingadores: Ultimato",
+        ano: 2019,
+        imagem: "https://upload.wikimedia.org/wikipedia/pt/9/9b/Avengers_Endgame.jpg",
+        descricao:
+            "Vingadores: Ultimato é um filme de super-herói americano de 2019, baseado na equipe Vingadores da Marvel Comics.",
         categoria: "Ficção científica",
     },
     {

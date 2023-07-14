@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "./Filme.css";
 
-const Filme = ({ nome, categoria, imagem, fundo, descricao }) => {
+const Filme = ({ nome, categoria, imagem, fundo, descricao, ano }) => {
     const [hovered, setHovered] = useState(false);
 
     return (
@@ -31,12 +31,17 @@ const Filme = ({ nome, categoria, imagem, fundo, descricao }) => {
 
             <div className="card-body">
                 <h2 className="card-title">{nome}</h2>
-                <span
-                    className="badge text-white"
-                    style={{ backgroundColor: fundo, color: "#fff" }}
-                >
-                    {categoria}
-                </span>
+                <div className="card-info">
+                    <span
+                        className="badge text-sm badge-sm text-white"
+                        style={{ backgroundColor: fundo, color: "#fff" }}
+                    >
+                        {categoria}
+                    </span>
+                    <span className="badge badge-ghost text-sm badge-sm text-white">
+                        {ano}
+                    </span>
+                </div>
                 <p className="max-w-xs">{descricao}</p>
                 <div className="card-actions justify-end">
                     <button className="btn btn-primary">Watch</button>
