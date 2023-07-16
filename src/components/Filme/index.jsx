@@ -44,7 +44,7 @@ const Filme = ({ nome, categoria, imagem, fundo, descricao, ano }) => {
                 </div>
                 <p className="max-w-xs">{descricao}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Watch</button>
+                    <button className="btn btn-primary">Assistir</button>
                 </div>
             </div>
         </div>

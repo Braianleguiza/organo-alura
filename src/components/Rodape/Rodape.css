@@ -1,4 +1,6 @@
-/* src/componentes/Rodape/index.js */
+.flex {
+    display: flex !important;
+}
 
 .footer {
     background: #29323c;
