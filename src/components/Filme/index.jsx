@@ -2,8 +2,20 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import "./Filme.css";
+import { AiFillCloseCircle, AiOutlineHeart } from "react-icons/ai";
+import { AiFillHeart } from "react-icons/ai";
 
-const Filme = ({ nome, categoria, imagem, fundo, descricao, ano }) => {
+const Filme = ({
+    nome,
+    categoria,
+    imagem,
+    fundo,
+    descricao,
+    ano,
+    aoDeletar,
+    favorito,
+    aoFavoritar,
+}) => {
     const [hovered, setHovered] = useState(false);
 
     return (
@@ -20,6 +32,13 @@ const Filme = ({ nome, categoria, imagem, fundo, descricao, ano }) => {
                 transition: "box-shadow 0.3s",
             }}
         >
+            <AiFillCloseCircle
+                size={25}
+                onClick={() => {
+                    aoDeletar(nome + ano);
+                }}
+                className="deletar"
+            />
             <div
                 className="figure"
                 style={{
@@ -45,6 +64,20 @@ const Filme = ({ nome, categoria, imagem, fundo, descricao, ano }) => {
                 <p className="max-w-xs">{descricao}</p>
                 <div className="card-actions justify-end">
                     <button className="btn btn-primary">Assistir</button>
+                </div>
+                <div className="favoritar">
+                    {favorito ? (
+                        <AiFillHeart
+                            color={"#ff0000"}
+                            size={25}
+                            onClick={() => aoFavoritar(nome + ano)}
+                        />
+                    ) : (
+                        <AiOutlineHeart
+                            size={25}
+                            onClick={() => aoFavoritar(nome + ano)}
+                        />
+                    )}
                 </div>
             </div>
         </div>

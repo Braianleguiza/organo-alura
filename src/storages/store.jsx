@@ -6,6 +6,7 @@ const filmesInicial = [
         descricao:
             "Titanic é um filme épico de romance e desastre americano de 1997 dirigido, escrito, produzido e coeditado por James Cameron.",
         categoria: "Romance",
+        favorito: false,
     },
     {
         nome: "Indiana Jones e a Última Cruzada",
@@ -14,6 +15,7 @@ const filmesInicial = [
         descricao:
             "Indiana Jones e a Última Cruzada é um filme de aventura de 1989 dirigido por Steven Spielberg.",
         categoria: "Aventura",
+        favorito: false,
     },
     {
         nome: "De Volta para o Futuro",
@@ -22,6 +24,7 @@ const filmesInicial = [
         descricao:
             "De Volta para o Futuro é um filme de ficção científica de 1985 dirigido por Robert Zemeckis.",
         categoria: "Ficção científica",
+        favorito: false,
     },
     {
         nome: "Matrix",
@@ -30,6 +33,7 @@ const filmesInicial = [
         descricao:
             "Matrix é um filme de ficção científica de 1999 dirigido por Lana Wachowski e Lilly Wachowski.",
         categoria: "Ficção científica",
+        favorito: false,
     },
     {
         nome: "As Branquelas",
@@ -38,6 +42,7 @@ const filmesInicial = [
         descricao:
             "As Branquelas é uma comédia de 2004 dirigida por Keenen Ivory Wayans.",
         categoria: "Comédia",
+        favorito: false,
     },
     {
         nome: "Todo Mundo em Pânico",
@@ -46,6 +51,7 @@ const filmesInicial = [
         descricao:
             "Todo Mundo em Pânico é uma comédia de 2000 dirigida por Keenen Ivory Wayans.",
         categoria: "Comédia",
+        favorito: false,
     },
     {
         nome: "O Poderoso Chefão",
@@ -54,6 +60,7 @@ const filmesInicial = [
         descricao:
             "O Poderoso Chefão é um filme de drama de 1972 dirigido por Francis Ford Coppola.",
         categoria: "Drama",
+        favorito: false,
     },
     {
         nome: "Homens de Honra",
@@ -62,6 +69,7 @@ const filmesInicial = [
         descricao:
             "Homens de Honra é um filme norte-americano de 2000, dirigido por George Tillman Jr., com roteiro de Scott Marshall Smith. ",
         categoria: "Drama",
+        favorito: false,
     },
     {
         nome: "Um Sonho de Liberdade",
@@ -70,6 +78,7 @@ const filmesInicial = [
         descricao:
             "Um Sonho de Liberdade é um filme norte-americano de drama lançado em 1994, escrito e dirigido por Frank Darabont baseado na novela Rita Hayworth and Shawshank Redemption, de Stephen King.",
         categoria: "Drama",
+        favorito: false,
     },
     {
         nome: "À Espera de um Milagre",
@@ -78,6 +87,7 @@ const filmesInicial = [
         descricao:
             "À Espera de um Milagre é um filme norte-americano de 1999, dos gêneros drama, policial e fantasia, dirigido e roteirizado por Frank Darabont, com base no livro homônimo de Stephen King, lançado em 1996.",
         categoria: "Drama",
+        favorito: false,
     },
     {
         nome: "Clube da Luta",
@@ -86,6 +96,7 @@ const filmesInicial = [
         descricao:
             "Clube da Luta é um filme de drama de 1999 dirigido por David Fincher.",
         categoria: "Drama",
+        favorito: false,
     },
     {
         nome: "O Senhor dos Anéis: A Sociedade do Anel",
@@ -94,6 +105,7 @@ const filmesInicial = [
         descricao:
             "O Senhor dos Anéis: A Sociedade do Anel é um épico de fantasia de 2001 dirigido por Peter Jackson.",
         categoria: "Épico",
+        favorito: false,
     },
     {
         nome: "Troia",
@@ -102,6 +114,7 @@ const filmesInicial = [
         descricao:
             "Troia é um filme épico britano-malto-estadunidense de 2004, dirigido por Wolfgang Petersen, com roteiro de David Benioff baseado no poema épico Ilíada, de Homero, sobre a Guerra de Troia.",
         categoria: "Épico",
+        favorito: false,
     },
     {
         nome: "King Kong",
@@ -110,6 +123,7 @@ const filmesInicial = [
         descricao:
             "King Kong é um filme estadunidense de 2005, dos gêneros épico, ação, aventura, e fantasia, co-escrito, produzido e dirigido por Peter Jackson, sendo um remake de King Kong, de 1933.",
         categoria: "Épico",
+        favorito: false,
     },
     {
         nome: "Coração Valente",
@@ -118,6 +132,7 @@ const filmesInicial = [
         descricao:
             "Coração Valente é um filme norte-americano de 1995, estrelado e realizado por Mel Gibson.",
         categoria: "Épico",
+        favorito: false,
     },
     {
         nome: "300",
@@ -126,6 +141,7 @@ const filmesInicial = [
         descricao:
             "300 é um filme de fantasia e guerra norte-americano de 2006, co-escrito e dirigido por Zack Snyder. É baseado na série de quadrinhos homônima de Frank Miller e Lynn Varley, publicada pela Dark Horse Comics em 1998.",
         categoria: "Épico",
+        favorito: false,
     },
     {
         nome: "Gladiador",
@@ -134,6 +150,7 @@ const filmesInicial = [
         descricao:
             "Gladiador é um épico de ação de 2000 dirigido por Ridley Scott.",
         categoria: "Épico",
+        favorito: false,
     },
     {
         nome: "Pulp Fiction",
@@ -142,6 +159,7 @@ const filmesInicial = [
         descricao:
             "Pulp Fiction é um filme de suspense de 1994 dirigido por Quentin Tarantino.",
         categoria: "Suspense",
+        favorito: false,
     },
     {
         nome: "Seven: Os Sete Crimes Capitais",
@@ -150,6 +168,7 @@ const filmesInicial = [
         descricao:
             "Seven: Os Sete Crimes Capitais é um filme de suspense de 1995 dirigido por David Fincher.",
         categoria: "Suspense",
+        favorito: false,
     },
     {
         nome: "Jurassic Park",
@@ -158,6 +177,7 @@ const filmesInicial = [
         descricao:
             "Jurassic Park é um filme de aventura de 1993 dirigido por Steven Spielberg.",
         categoria: "Aventura",
+        favorito: false,
     },
     {
         nome: "Forrest Gump",
@@ -166,6 +186,7 @@ const filmesInicial = [
         descricao:
             "Forrest Gump é um filme de comédia dramática de 1994 dirigido por Robert Zemeckis.",
         categoria: "Comédia",
+        favorito: false,
     },
     {
         nome: "Clube dos Cinco",
@@ -174,6 +195,7 @@ const filmesInicial = [
         descricao:
             "Clube dos Cinco é um filme de comédia-drama de 1985 dirigido por John Hughes.",
         categoria: "Drama",
+        favorito: false,
     },
     {
         nome: "Scarface",
@@ -182,6 +204,7 @@ const filmesInicial = [
         descricao:
             "Scarface é um filme de crime de 1983 dirigido por Brian De Palma.",
         categoria: "Suspense",
+        favorito: false,
     },
     {
         nome: "E.T.: O Extraterrestre",
@@ -190,6 +213,7 @@ const filmesInicial = [
         descricao:
             "E.T.: O Extraterrestre é um filme de aventura de 1982 dirigido por Steven Spielberg.",
         categoria: "Aventura",
+        favorito: false,
     },
     {
         nome: "Piratas do Caribe: A Maldição do Pérola Negra",
@@ -198,6 +222,7 @@ const filmesInicial = [
         descricao:
             "Piratas do Caribe é um filme estadunidense de fantasia Swashbuckler de 2003 baseado no brinquedo Pirates of the Caribbean dos parques temáticos da Walt Disney Parks and Resorts.",
         categoria: "Aventura",
+        favorito: false,
     },
     {
         nome: "Harry Potter e a Pedra Filosofal",
@@ -206,6 +231,7 @@ const filmesInicial = [
         descricao:
             "Harry Potter é um filme britano-americano de 2001, dos gêneros aventura e fantasia, dirigido por Chris Columbus, com roteiro de Steven Kloves baseado no livro homônimo de J. K. Rowling.",
         categoria: "Aventura",
+        favorito: false,
     },
     {
         nome: "O Silêncio dos Inocentes",
@@ -214,6 +240,7 @@ const filmesInicial = [
         descricao:
             "O Silêncio dos Inocentes é um filme de suspense de 1991 dirigido por Jonathan Demme.",
         categoria: "Suspense",
+        favorito: false,
     },
     {
         nome: "O Sexto Sentido",
@@ -222,6 +249,7 @@ const filmesInicial = [
         descricao:
             "O Sexto Sentido é um filme de suspense de 1999 dirigido por M. Night Shyamalan.",
         categoria: "Suspense",
+        favorito: false,
     },
     {
         nome: "Toy Story",
@@ -230,6 +258,7 @@ const filmesInicial = [
         descricao:
             "Toy Story é um filme de animação de 1995 produzido pela Pixar Animation Studios.",
         categoria: "Animação",
+        favorito: true,
     },
     {
         nome: "O Rei Leão",
@@ -238,6 +267,7 @@ const filmesInicial = [
         descricao:
             "O Rei Leão é um filme de animação de 1994 produzido pela Walt Disney Animation Studios.",
         categoria: "Animação",
+        favorito: false,
     },
     {
         nome: "Beleza Americana",
@@ -246,6 +276,7 @@ const filmesInicial = [
         descricao:
             "Beleza Americana é um filme de comédia dramática de 1999 dirigido por Sam Mendes.",
         categoria: "Comédia",
+        favorito: false,
     },
     {
         nome: "Esqueceram de Mim",
@@ -254,6 +285,7 @@ const filmesInicial = [
         descricao:
             "Esqueceram de Mim é um filme de comédia de Natal estadunidense de 1990, escrito e produzido por John Hughes e dirigido por Chris Columbus. ",
         categoria: "Comédia",
+        favorito: false,
     },
     {
         nome: "Todo Poderoso",
@@ -262,6 +294,7 @@ const filmesInicial = [
         descricao:
             "Todo Poderoso é um filme de comédia e fantasia estadunidense de 2003, dirigido por Tom Shadyac e escrito por Steve Koren, Mark O'Keefe e Steve Oedekerk.",
         categoria: "Comédia",
+        favorito: false,
     },
     {
         nome: "A Origem",
@@ -270,6 +303,7 @@ const filmesInicial = [
         descricao:
             "A Origem é um filme de ficção científica de 2010 dirigido por Christopher Nolan.",
         categoria: "Ficção científica",
+        favorito: false,
     },
     {
         nome: "WALL-E",
@@ -278,6 +312,7 @@ const filmesInicial = [
         descricao:
             "WALL-E (estilizado como WALL·E) é um filme de animação americano de 2008 produzido pela Pixar Animation Studios e dirigido por Andrew Stanton.",
         categoria: "Animação",
+        favorito: false,
     },
     {
         nome: "UP",
@@ -286,6 +321,7 @@ const filmesInicial = [
         descricao:
             "Up é um filme norte-americano do gênero animação sendo o 10º longa-metragem de animação produzida pelos estúdios Pixar lançada nos Estados Unidos em 29 de maio de 2009",
         categoria: "Animação",
+        favorito: false,
     },
     {
         nome: "Bolt",
@@ -294,6 +330,7 @@ const filmesInicial = [
         descricao:
             "Bolt é um filme de animação estadunidense de 2008, dos gêneros comédia e aventura, dirigido por Chris Williams e Byron Howard",
         categoria: "Animação",
+        favorito: false,
     },
     {
         nome: "O Castelo Animado",
@@ -302,6 +339,7 @@ const filmesInicial = [
         descricao:
             "O Castelo Animado é um filme japonês de animação e fantasia lançado em 2004, vagamente baseado no romance Howl's Moving Castle (1986) da dramaturga britânica Diana Wynne Jones.",
         categoria: "Animação",
+        favorito: false,
     },
     {
         nome: "Brilho Eterno de uma Mente sem Lembranças",
@@ -310,6 +348,7 @@ const filmesInicial = [
         descricao:
             "Brilho Eterno de uma Mente sem Lembranças é um filme de romance de 2004 dirigido por Michel Gondry.",
         categoria: "Romance",
+        favorito: false,
     },
     {
         nome: "Encontro Marcado",
@@ -318,6 +357,7 @@ const filmesInicial = [
         descricao:
             "Encontro Marcado é um filme de fantasia romântico americano lançado em 1998, remake do filme Death Takes a Holiday, de 1934.",
         categoria: "Romance",
+        favorito: false,
     },
     {
         nome: "V de Vingança",
@@ -326,6 +366,7 @@ const filmesInicial = [
         descricao:
             "V de Vingança é um filme de ação de 2005 dirigido por James McTeigue.",
         categoria: "Aventura",
+        favorito: false,
     },
     {
         nome: "Donnie Darko",
@@ -334,6 +375,7 @@ const filmesInicial = [
         descricao:
             "Donnie Darko é um filme de ficção científica de 2001 dirigido por Richard Kelly.",
         categoria: "Ficção científica",
+        favorito: false,
     },
     {
         nome: "Logan",
@@ -342,6 +384,7 @@ const filmesInicial = [
         descricao:
             "Logan é um filme canado-australiano-estadunidense de 2017, dos gêneros ação, drama e ficção científica, dirigido por James Mangold, com base no personagem da Marvel Comics, Wolverine.",
         categoria: "Ficção científica",
+        favorito: false,
     },
     {
         nome: "Vingadores: Ultimato",
@@ -350,6 +393,7 @@ const filmesInicial = [
         descricao:
             "Vingadores: Ultimato é um filme de super-herói americano de 2019, baseado na equipe Vingadores da Marvel Comics.",
         categoria: "Ficção científica",
+        favorito: false,
     },
     {
         nome: "O Grande Truque",
@@ -358,6 +402,7 @@ const filmesInicial = [
         descricao:
             "O Grande Truque é um filme de mistério de 2006 dirigido por Christopher Nolan.",
         categoria: "Suspense",
+        favorito: false,
     },
 ];
 

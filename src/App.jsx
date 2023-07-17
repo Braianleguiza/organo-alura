@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import { useState } from "react";
 import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
@@ -6,63 +5,45 @@ import Categoria from "./components/Categoria";
 import Rodape from "./components/Rodape";
 import filmesInicial from "./storages/store";
 import "tailwindcss/tailwind.css";
+import InitialCategories from "./storages/categorias";
 
 function App() {
-    const categorias = [
-        {
-            nome: "Animação",
-            corPrimaria: "#3FD1C9",
-            corSecundaria: "#FEEFDF",
-            icon: "/imagens/cartoon.svg",
-        },
-        {
-            nome: "Aventura",
-            corPrimaria: "#3AB54A",
-            corSecundaria: "#d9f7e9",
-            icon: "/imagens/aventura.svg",
-        },
-        {
-            nome: "Comédia",
-            corPrimaria: "#F9D71C",
-            corSecundaria: "#E8F8FF",
-            icon: "/imagens/comedy.svg",
-        },
-        {
-            nome: "Drama",
-            corPrimaria: "#E74C3C",
-            corSecundaria: "#F0F8E2",
-            icon: "/imagens/drama.svg",
-        },
-        {
-            nome: "Épico",
-            corPrimaria: "#8C67AB",
-            corSecundaria: "#FEE7E9",
-            icon: "/imagens/epic.svg",
-        },
-        {
-            nome: "Ficção científica",
-            corPrimaria: "#3498DB",
-            corSecundaria: "#FAE9F6",
-            icon: "/imagens/fiction.svg",
-        },
-        {
-            nome: "Romance",
-            corPrimaria: "#FF6EC7",
-            corSecundaria: "#FFF5D9",
-            icon: "/imagens/romance.svg",
-        },
-        {
-            nome: "Suspense",
-            corPrimaria: "#8B0000",
-            corSecundaria: "#FEEFDF",
-            icon: "/imagens/suspense.svg",
-        },
-    ];
-
     const [filmes, setFilmes] = useState(filmesInicial);
+    const [categorias, setCategorias] = useState(InitialCategories());
 
     const aoNovoFilmeAdicionado = (filme) => {
         setFilmes([...filmes, filme]);
+    };
+
+    const deletaFilme = (id) => {
+        setFilmes(filmes.filter((filme) => filme.nome + filme.ano !== id));
+    };
+
+    const mudarCorCategoria = (cor, nome) => {
+        setCategorias(
+            categorias.map((categoria) => {
+                if (categoria.nome === nome) {
+                    return {
+                        ...categoria,
+                        corPrimaria: cor,
+                    };
+                }
+                return categoria;
+            })
+        );
+    };
+    const alterarFavorito = (id) => {
+        setFilmes(
+            filmes.map((filme) => {
+                if (filme.nome + filme.ano === id) {
+                    return {
+                        ...filme,
+                        favorito: !filme.favorito,
+                    };
+                }
+                return filme;
+            })
+        );
     };
 
     return (
@@ -74,6 +55,7 @@ function App() {
             />
             {categorias.map((categoria) => (
                 <Categoria
+                    mudarCor={mudarCorCategoria}
                     key={categoria.nome}
                     nome={categoria.nome}
                     icon={categoria.icon}
@@ -82,6 +64,8 @@ function App() {
                     filmes={filmes.filter(
                         (filme) => filme.categoria === categoria.nome
                     )}
+                    aoDeletar={deletaFilme}
+                    aoFavoritar={alterarFavorito}
                 />
             ))}
             <Rodape />

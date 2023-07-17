@@ -10,8 +10,19 @@
 .card {
     margin: 16px 0;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+    position: relative;
 }
 .card-info {
     display: flex;
     gap: 5px;
+}
+.deletar {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+.favoritar {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
 }
