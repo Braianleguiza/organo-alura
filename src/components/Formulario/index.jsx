@@ -30,7 +30,9 @@ const Formulario = (props) => {
     return (
         <section className="formulario">
             <form className="bg-neutral" onSubmit={aoSalvar}>
-                <h1>Prencha os dados do filme: </h1>
+                <h1 style={{ fontSize: "24px", textAlign: "center" }}>
+                    Prencha os dados do filme
+                </h1>
                 <CampoTexto
                     obrigatorio
                     label="Nome"

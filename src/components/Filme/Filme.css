@@ -22,7 +22,6 @@
     top: -10px;
 }
 .favoritar {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
+    bottom: 4px;
+    right: 8px;
 }

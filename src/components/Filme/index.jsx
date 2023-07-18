@@ -52,32 +52,38 @@ const Filme = ({
                 <h2 className="card-title">{nome}</h2>
                 <div className="card-info">
                     <span
-                        className="badge text-sm badge-sm text-white"
+                        className="badge text-sm text-white"
                         style={{ backgroundColor: fundo, color: "#fff" }}
                     >
                         {categoria}
                     </span>
-                    <span className="badge badge-ghost text-sm badge-sm text-white">
+                    <span className="badge badge-ghost text-sm text-white">
                         {ano}
                     </span>
                 </div>
                 <p className="max-w-xs">{descricao}</p>
                 <div className="card-actions justify-end">
                     <button className="btn btn-primary">Assistir</button>
-                </div>
-                <div className="favoritar">
-                    {favorito ? (
-                        <AiFillHeart
-                            color={"#ff0000"}
-                            size={25}
-                            onClick={() => aoFavoritar(nome + ano)}
-                        />
-                    ) : (
-                        <AiOutlineHeart
-                            size={25}
-                            onClick={() => aoFavoritar(nome + ano)}
-                        />
-                    )}
+                    <div className="favoritar">
+                        {favorito ? (
+                            <button
+                                onClick={() => aoFavoritar(nome + ano)}
+                                className="btn btn-ghost"
+                            >
+                                <AiFillHeart color={"#e31b23"} size={25} />
+                            </button>
+                        ) : (
+                            <button
+                                onClick={() => aoFavoritar(nome + ano)}
+                                className="btn btn-ghost border "
+                            >
+                                <AiOutlineHeart
+                                    size={25}
+                                    onClick={() => aoFavoritar(nome + ano)}
+                                />
+                            </button>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
