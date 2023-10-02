@@ -1,27 +1,27 @@
 .figure {
-    min-width: 200px;
-    min-height: 280px;
-    border-radius: 1rem 0 0 1rem;
+  min-width: 200px;
+  min-height: 280px;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .card-body {
-    max-width: 300px;
+  max-width: 300px;
 }
 .card {
-    margin: 16px 0;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
-    position: relative;
+  margin: 16px 0;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 .card-info {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 .deletar {
-    position: absolute;
-    right: -10px;
-    top: -10px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
 }
 .favoritar {
-    bottom: 4px;
-    right: 8px;
+  bottom: 4px;
+  right: 8px;
 }

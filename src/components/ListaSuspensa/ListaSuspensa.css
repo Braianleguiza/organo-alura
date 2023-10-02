@@ -1,9 +1,9 @@
 .lista-suspensa label {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 1rem;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1rem;
 }
 
 .lista-suspensa select {
-    width: 100%;
+  width: 100%;
 }

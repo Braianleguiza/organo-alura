@@ -1,8 +1,13 @@
 .banner {
-    background-color: #f86262;
     text-align: center;
+    background-color: #f86262;
+    width: 100%; /* Defina a largura do elemento header para 100% */
+    max-width: 100%; /* Certifique-se de que a largura máxima não ultrapasse 100% */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .banner img {
-    max-width: 100vw;
+    display: block; /* Garante que a imagem seja tratada como um bloco para alinhamento correto */
+    width: 100%; /* Define a largura da imagem para 100% do elemento pai */
+    height: auto; /* Mantém a proporção da imagem */
 }
